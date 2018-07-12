@@ -1,5 +1,4 @@
-#max100
-
+# max100
 Card game where the maximum value of the discard pile is 100 points.
 
 Several people, up to 12, can play the same game.
