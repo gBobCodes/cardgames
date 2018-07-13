@@ -1,8 +1,9 @@
 import random
-
+# from django.db import models
 from .card import Card
 
 
+# class Deck(models.Model):
 class Deck():
     """A list of 52 playing cards, 54 if jokers are included."""
 

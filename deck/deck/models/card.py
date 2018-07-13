@@ -1,3 +1,7 @@
+# from django.db import models
+
+
+# class Card(models.Model):
 class Card():
     """A playing card with a suit and a value."""
 
