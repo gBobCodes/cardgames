@@ -40,7 +40,6 @@ class Game():
             card = PlayableCard(
                 suit=item['suit'],
                 value=item['value'],
-                points=None
             )
             self.draw_pile.append(card)
         self.assign_points()

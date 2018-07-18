@@ -46,7 +46,7 @@ class Card():
 
 class PlayableCard(Card):
     
-    def __init__(self, suit, value, points=0):
+    def __init__(self, suit, value, points=None):
         """Initialize a card with the given parameters."""
         super().__init__(suit, value)
         self.points = points
