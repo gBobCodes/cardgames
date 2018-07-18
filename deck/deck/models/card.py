@@ -35,3 +35,10 @@ class Card():
     def __str__(self):
         """Return a string for the print() command."""
         return "{} {}".format(self.value, self.suit)
+
+    def as_dict(self):
+        """Return a dictionary of this card's values."""
+        return {
+            "suit": self.suit,
+            "value": self.value,
+        }

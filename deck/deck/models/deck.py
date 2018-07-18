@@ -1,4 +1,4 @@
-import random
+import json, random
 # from django.db import models
 from .card import Card
 
@@ -28,3 +28,9 @@ class Deck():
         """Randomly order the list of cards."""
         random.shuffle(self.cards)
 
+    def json_cards(self):
+        """Return a list of the cards as dictionaries."""
+        card_list = []
+        for card in self.cards:
+            card_list.append(card.as_dict())
+        return card_list
