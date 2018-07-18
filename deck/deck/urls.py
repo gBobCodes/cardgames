@@ -17,7 +17,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.urls import path
 from rest_framework import routers
-from .views import DeckView
+from .views import DeckView, DeckWithJokersView
 
 
 router = routers.DefaultRouter()
@@ -28,4 +28,5 @@ urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('deck', DeckView.as_view(), name='deck'),
+    path('deckwithjokers', DeckWithJokersView.as_view(), name='joker-deck'),
 ]

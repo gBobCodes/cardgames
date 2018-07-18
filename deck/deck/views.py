@@ -13,3 +13,13 @@ class DeckView(APIView):
         deck.shuffle()
         return Response(deck.json_cards())
 
+class DeckWithJokersView(APIView):
+    # authentication_classes = (authentication.TokenAuthentication,)
+    # permission_classes = (permissions.IsAdminUser,)
+
+    def get(self, request, format=None):
+        """Return a shuffled deck of cards with jokers in json format."""
+        deck = Deck(jokers=True)
+        deck.shuffle()
+        return Response(deck.json_cards())
+
