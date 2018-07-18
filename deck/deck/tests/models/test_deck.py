@@ -36,4 +36,11 @@ class TestDeck(TestCase):
                 shuffled = True
         assert shuffled
 
-
+    def test_json_cards_success(self):
+        """Verify the json_cards() method returns a list of dictionaries."""
+        deck = Deck()
+        deck.shuffle()
+        json_cards = deck.json_cards()
+        for i in range(len(json_cards)):
+            assert json_cards[i]['suit'] == deck.cards[i].suit
+            assert json_cards[i]['value'] == deck.cards[i].value

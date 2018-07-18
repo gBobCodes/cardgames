@@ -33,3 +33,16 @@ class TestCard(TestCase):
             assert "unknown value" in e.args[0]
         except:
             assert False
+
+    def test_card_as_dict_success(self):
+        """Verify the as_dict() method."""
+        test_suit = 'C'
+        test_value = '5'
+        card = Card(suit=test_suit, value=test_value)
+        assert card.suit == test_suit
+        assert card.value == test_value
+
+        card_dict = card.as_dict()
+        assert card_dict['suit'] == test_suit
+        assert card_dict['value'] == test_value
+        
