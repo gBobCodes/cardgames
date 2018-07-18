@@ -26,7 +26,5 @@ class Deck():
         
     def shuffle(self):
         """Randomly order the list of cards."""
-        print("shuffling . . .")
         random.shuffle(self.cards)
-        print("done")
 

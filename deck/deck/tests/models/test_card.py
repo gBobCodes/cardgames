@@ -6,7 +6,7 @@ from deck.models import Card
 class TestCard(TestCase):
     """Test the Card model."""
 
-    def test_create_card_suit_success(self):
+    def test_create_card_success(self):
         """Verify a card can be created."""
         card = Card(suit='S', value='A')
         assert card.suit == 'S'
