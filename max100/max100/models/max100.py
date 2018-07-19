@@ -2,7 +2,8 @@ import random, requests
 
 from max100.models import PlayableCard
 
-class Game():
+
+class Max100():
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

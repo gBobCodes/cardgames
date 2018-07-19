@@ -1,8 +1,6 @@
-# from django.db import models
+# -*- coding: utf-8 -*-
 
-
-# class Card(models.Model):
-class Card():
+class PlayingCard():
     """A playing card with a suit and a value."""
 
     valid_suits = ['S', 'H', 'C', 'D']  # Spade, Heart, Club, Diamond
@@ -10,9 +8,8 @@ class Card():
     valid_joker_suits = ['B', 'R']      # Black, Red
     valid_joker_values = ['JOKER']
 
-    def __init__(self, suit, value, *args, **kwargs):
+    def __init__(self, suit, value):
         """Initialize a card with the given parameters."""
-        super().__init__(*args, **kwargs)
         suit = suit.upper()
         value = value.upper()
         if suit not in self.valid_suits + self.valid_joker_suits:
@@ -39,8 +36,5 @@ class Card():
 
     def as_dict(self):
         """Return a dictionary of this card's values."""
-        return {
-            "suit": self.suit,
-            "value": self.value,
-        }
-        
+        return vars(self)
+            

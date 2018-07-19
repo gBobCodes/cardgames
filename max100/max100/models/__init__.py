@@ -1,2 +1,2 @@
 from .card import PlayableCard
-from .game import Game
+from .max100 import Max100
