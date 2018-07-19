@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: playingcard
+Version: 0.1.0
+Summary: A playing card model used to play card games.
+Home-page: http://www.example.com/
+Author: Gordon Collins
+Author-email: gordon.collins@excella.com
+License: BSD License
+Description: # PlayingCard
+        Reusable model for a playing card.
+        A deck of cards can be used to play poker.
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
