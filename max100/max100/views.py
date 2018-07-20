@@ -1,9 +1,10 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import authentication, permissions
+from jwt_auth.mixins import JSONWebTokenAuthMixin
 # from max100.models import Game
 
-class GameView(APIView):
+class GameView(JSONWebTokenAuthMixin, APIView):
     # authentication_classes = (authentication.TokenAuthentication,)
     # permission_classes = (permissions.IsAdminUser,)
 

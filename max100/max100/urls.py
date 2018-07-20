@@ -17,6 +17,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.urls import path
 from rest_framework import routers
+from jwt_auth.views import obtain_jwt_token
 from .views import GameView
 
 
@@ -27,5 +28,6 @@ router = routers.DefaultRouter()
 urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'api-token-auth/', obtain_jwt_token),
     path('game', GameView.as_view(), name='game'),
 ]

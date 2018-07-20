@@ -1,6 +1,7 @@
 Django
 django-extensions
 djangorestframework
+django-jwt-auth
 requests
 
 # Should not use this path. Move tarball to some common dir.
