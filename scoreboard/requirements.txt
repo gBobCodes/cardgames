@@ -1,0 +1,6 @@
+Django
+django-extensions
+djangorestframework
+
+# Local python package for PlayingCard
+../common/pkg/playingcard-0.1.0.tar.gz
