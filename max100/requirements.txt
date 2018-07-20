@@ -4,5 +4,5 @@ djangorestframework
 django-jwt-auth
 requests
 
-# Should not use this path. Move tarball to some common dir.
-/Users/bob/code/cardgames/playingcard/dist/playingcard-0.1.0.tar.gz
+# Local python package for PlayingCard
+../common/pkg/playingcard-0.1.0.tar.gz

@@ -5,7 +5,6 @@ from jwt_auth.mixins import JSONWebTokenAuthMixin
 # from max100.models import Game
 
 class GameView(JSONWebTokenAuthMixin, APIView):
-    # authentication_classes = (authentication.TokenAuthentication,)
     # permission_classes = (permissions.IsAdminUser,)
 
     def get(self, request, format=None):
